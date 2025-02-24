@@ -14,7 +14,7 @@ function Footer() {
                         />
                     </div>
                     <p className="text-sm text-gray-400">
-                        <strong>Keith Ceramic.</strong><br></br> Providing reliable tech since 1992
+                        <strong>Keith Ceramic.</strong><br></br> Casting a better future together since 1992
                     </p>
                 </div>
 
@@ -25,13 +25,13 @@ function Footer() {
                     </h3>
                     <ul className="space-y-2">
                         {[
-                            {title:"Agricultural Castings",url:"/products/agricultural-castings"}, 
-                            {title:"Miscellaneous Castings",url:"/products/miscellaneous-castings"}, 
                             {title:"Municipal Castings",url:"/products/municipal-public-utility-castings"},
-                            {title:"Railway Castings",url:"/products/railway-castings"},
                             {title:"Water Distribution Equipment",url:"/products/water-distribution-equipment"},
+                            {title:"Agricultural Castings",url:"/products/agricultural-castings"}, 
+                            {title:"Railway Castings",url:"/products/railway-castings"},
                             {title:"Counter Weights",url:"/products/counter-weights"},
                             {title:"High Tension Power Transmission",url:"/products/high-tension-power-transmission"},
+                            {title:"Miscellaneous Castings",url:"/products/miscellaneous-castings"}, 
                             ].map((item) => (
                             <li key={item.title}>
                                 <Link to={item.url} className="text-gray-400 hover:text-white transition-colors text-sm">
@@ -72,7 +72,8 @@ function Footer() {
                     <ul className="space-y-2 text-gray-400 text-sm">
                         <li>+91 33 26775922</li>
                         <li>info@keithceramic.com</li>
-                        <li>Natabar Paul Road, Howrah – 711101</li>
+                        <li>Suite-5, Mahamaya Apartments<br></br> 58/1/1,Natabar Paul Road<br></br> Howrah – 711101<br></br>West Bengal, India</li>
+                        <li></li>
                     </ul>
                 </div>
             </div>

@@ -15,10 +15,9 @@ const TeamManagement = () => {
 
   const peoples = [
     { name: "Murari Lal Ruia", image: "/assets/images/persons/MURARI LAL RUIA-min.jpg",position:"Founder",description:"I am the Founder" },
-    { name: "Anant Kumar", image: "/assets/images/persons/ANANT KUMAR-min.jpg",position:"Co-Founder",description:"Hi, I am Who are you looking for?" },
-    { name: "Yashwant Murari Lal", image: "/assets/images/persons/YASHWANT MURARI LAL.jpg",position:"Founder",description:"Hi, I am Who are you looking for?" },
-    { name: "Keith Ceramic Team", image: "/assets/images/persons/KEITH CERAMIC TEAM-min.JPG",position:"Founder",description:"Hi, I am Who are you looking for?" },
-    
+    { name: "Yashwant Ruia", image: "/assets/images/persons/YASHWANT MURARI LAL.jpg",position:"Co-Founder",description:"Hi, I am Co-Founder" },
+    { name: "Anant Kumar Ruia", image: "/assets/images/persons/ANANT KUMAR-min.jpg",position:"Co-Founder",description:"Hi, I am Co-Founder" },
+   
   // Add more products as needed
 ];
   // Filtered team members based on active category

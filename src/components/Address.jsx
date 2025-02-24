@@ -16,7 +16,7 @@ function Address() {
     },
     {
       title: "Factory",
-      image: "assets/images/factory.jpg",
+      image: "assets/images/fact.png",
       landmark: "Plot Nos. 42 & 43, Uluberia Industrial Growth Center",
       area: "Birshibpur",
       city: "Howrah",

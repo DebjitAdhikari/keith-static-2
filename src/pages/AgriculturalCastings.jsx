@@ -9,7 +9,7 @@ function AgriculturalCastings() {
     { name: "Packer Ring 80 cm Modified", image: "/assets/images/products/agricultural-castings/PACKER RING 80 CM MODIFIED-min.JPG" },
     { name: "Packer Ring 80 cm", image: "/assets/images/products/agricultural-castings/PACKER RING 80 CM-min.JPG" },
     { name: "Packer Ring 80", image: "/assets/images/products/agricultural-castings/PACKER RING-min.JPG" },
-    { name: "Smooth Ring Snowflake & Takket Ring", image: "/assets/images/products/agricultural-castings/SMOOTH RING SNOWFLAKE & TAKKET RING-min.JPG" },
+    { name: "Smooth Ring Snowflake & Jagged Ring", image: "/assets/images/products/agricultural-castings/SMOOTH RING SNOWFLAKE & TAKKET RING-min.JPG" },
     { name: "Waved Ring 50 cm", image: "/assets/images/products/agricultural-castings/WAVED RING 50 CM-min.JPG" },
   
     // Add more products as needed

@@ -26,12 +26,12 @@ function HeroSection() {
   </video>
 
   {/* Text content overlay */}
-  <div className="relative z-10 flex flex-col items-center justify-center min-h-[90vh] text-center text-gray-100 p-10">
+  <div className="relative z-10 flex flex-col items-center justify-center min-h-[90vh] text-center text-gray-100 p-5 sm:p-10">
     {/* <h1 className="text-xl sm:text-3xl md:text-6xl font-bold drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]" dangerouslySetInnerHTML={{__html: HeroData?.content1}}> */}
-    <h1 className="text-xl sm:text-3xl md:text-6xl font-bold drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]" >
+    <h1 className="text-3xl md:text-6xl font-bold drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]" >
       Welcome To <br className="block sm:hidden"></br>Keith Ceramic  
     </h1>
-    <p className="text-sm sm:text-lg md:text-xl mt-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+    <p className="text-lg sm:text-xl md:text-xl mt-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
       Lasting Impression Cast in Iron
     </p>
   </div>

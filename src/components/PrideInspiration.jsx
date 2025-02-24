@@ -4,8 +4,9 @@ function PrideInspiration() {
   
   const people = [
     { name: "Murari Lal Ruia", image: "/assets/images/persons/MURARI LAL RUIA-min.jpg",position:"Founder",description:"I am the Founder" },
-    { name: "Anant Kumar", image: "/assets/images/persons/ANANT KUMAR-min.jpg",position:"Co-Founder",description:"Hi, I am Who are you looking for?" },
-    
+    { name: "Yashwant Ruia", image: "/assets/images/persons/YASHWANT MURARI LAL.jpg",position:"Co-Founder",description:"Hi, I am Who are you looking for?" },
+    { name: "Anant Kumar Ruia", image: "/assets/images/persons/ANANT KUMAR-min.jpg",position:"Co-Founder",description:"Hi, I am Who are you looking for?" },
+   
     // Add more products as needed
   ];
 

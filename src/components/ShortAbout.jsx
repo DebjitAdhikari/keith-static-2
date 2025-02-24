@@ -24,7 +24,7 @@ function ShortAbout() {
 
 
 
-                                KTC is strategically located with easy access to two nearby ports and a railway station, making it easier to transport multi-axle goods efficiently. Their facility is conveniently situated along a national highway, ensuring smooth logistics and timely delivery.<br></br><br></br>
+                                KTC is strategically located with easy access to two nearby ports and a railway station, making it easier to transport goods on multi-axle vehicles efficiently. Their facility is conveniently situated along a national highway, ensuring smooth logistics and timely delivery.<br></br><br></br>
 
 
 

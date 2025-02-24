@@ -44,7 +44,7 @@ function Home() {
           <Helmet>
               <title>Keith Ceramic | Premium Handmade Ceramics & Pottery</title>
               <meta name="description" content="Shop premium handmade ceramics at Keith Ceramic. Discover our wide range of high-quality pottery and home decor, crafted with excellence." />
-              <meta name="keywords" content="Keith Ceramic, handmade ceramics, premium pottery, quality ceramics, home decor, ceramic art, pottery shop" />
+              <meta name="keywords" content="Keith Ceramic, Keith Ceramic Uluberia, Keith Ceramic India, Keith Caramik, Keith Saramik, Keith Seramic, handmade ceramics, kith caramic" />
               <meta name="author" content="Keith Ceramic" />
           </Helmet>
 
@@ -70,12 +70,22 @@ function Home() {
                 backgroundRepeat: "no-repeat",
               }}
             >
+              <div className="w-screen min-h-[100vh]">
+            <div
+              className="w-screen h-[100vh] flex items-start justify-center"
+              style={{
+                backgroundImage: "url('/assets/images/persons/KEITH CERAMIC TEAM-min.JPG')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
               <motion.div
                 initial="hidden"
                 whileInView="visible"
                 variants={fadeRight}
                 viewport={{ amount: "some" }}
-                className="h-auto mx-5 md:mx-10 w-[90%] md:w-[60%] lg:w-[40%] flex flex-col rounded-md gap-4 justify-center items-center bg-gray-200 opacity-90 p-6 md:p-10"
+                className="h-auto mx-5 md:mx-10 w-[90%] md:w-[60%] lg:w-[40%] mt-4 md:mt-20 flex flex-col rounded-md gap-4 justify-center items-center bg-gray-200 opacity-90 p-6 md:p-10"
               >
                 <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center text-gray-800">
                   Keith Ceramic - Since 1992
@@ -87,6 +97,8 @@ function Home() {
                   className="h-[50px] md:h-[80px] lg:h-[100px] object-contain"
                 />
               </motion.div>
+            </div>
+          </div>
             </div>
           </div>
 
@@ -126,14 +138,14 @@ function Home() {
             <HomeAwards />
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial="hidden"
             whileInView="visible"
             variants={fadeLeft}
             viewport={{ amount: "some" }}
           >
             <Testimonial />
-          </motion.div>
+          </motion.div> */}
         </div>
       )}
     </>
