@@ -117,6 +117,15 @@ function Home() {
             variants={fadeRight}
             viewport={{ amount: "some" }}
           >
+            <HomeAwards />
+          </motion.div>
+          
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={fadeRight}
+            viewport={{ amount: "some" }}
+          >
             <HomeProducts />
           </motion.div>
 
@@ -129,14 +138,7 @@ function Home() {
             <PrideInspiration />
           </motion.div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeRight}
-            viewport={{ amount: "some" }}
-          >
-            <HomeAwards />
-          </motion.div>
+          
 
           {/* <motion.div
             initial="hidden"

@@ -30,7 +30,7 @@ function PlaceAddress({address}) {
                         {address.city} – {address.pin}<br></br>
                         {address.state}, {address.country}
                       </p>
-                      <button className="bg-orangeColor text-white px-3 py-2 mt-4 rounded-md">
+                      {/* <button className="bg-orangeColor text-white px-3 py-2 mt-4 rounded-md">
                         <a className="flex gap-1 items-center" href={address.findonmap}>
                           <svg className="w-[24px] size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -39,7 +39,7 @@ function PlaceAddress({address}) {
                           
                           Find on map
                         </a>
-                      </button>
+                      </button> */}
                     </div>
                   </div>
     )

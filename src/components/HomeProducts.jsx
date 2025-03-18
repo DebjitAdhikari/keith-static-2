@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 function HomeProducts() {
   const products = [
-        { name: "Hard liner plates of 400+ BHN", image: "/assets/images/products/miscellaneous-castings/HARD LINER PLATES OF 400+BHN.jpg" },
-        { name: "Match plate for high pressure moulding machine", image: "/assets/images/products/miscellaneous-castings/MATCH PLATE FOR HIGH PRESSURE MOULDING MACHINE.jpg" },
-        { name: "Match plate for simultaneous jolt squeeze machine", image: "/assets/images/products/miscellaneous-castings/MATCH PLATE FOR SIMULTANEOUS JOLT SQUEEZE MACHINE.jpg" },
+        { name: "4 X 24 Ring & Grate", image: "/assets/images/products/municipal-castings/4 X 24 RING & GRATE-min.jpg" },
+        { name: "Service box top bottom & lid", image: "/assets/images/products/water-distribution/SERVICE BOX TOP BOTTOM & LID-min.jpg" },
+        { name: "Match plate for simultaneous jolt squeeze machine", image: "/assets/images/products/agricultural-castings/CROSS COMBI RING-min.JPG" },
+        { name: "Circular counter weight", image: "/assets/images/products/counter-weights/CIRCULAR COUNTER WEIGHT-min.JPG" },
         
       // Add more products as needed
     ];

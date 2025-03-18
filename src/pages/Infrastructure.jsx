@@ -12,24 +12,8 @@ function Infrastructure() {
     const timeout = setTimeout(() => setLoading(false), 1000); // Simulate a delay
     return () => clearTimeout(timeout);
   }, []);
-
+  
   const infra = [
-    {
-      name: "Automatic Stretch Film Wrapping Machine",
-      image: "/assets/images/infra/AUTOMATIC STRETCH FILM WRAPPING MACHINE-min.jpg",
-      description:
-        "Signode make, model – HLS, PLC controlled fully automatic stretch film.",
-    },
-    {
-      name: "Cupola Furnace",
-      image: "/assets/images/infra/CUPOLA FURNACE-min.jpg",
-      description: "Divided blast energy-efficient cupola, 2 numbers, 6 MT/hour capacity.",
-    },
-    {
-      name: "Pollution Control Equipment",
-      image: "/assets/images/infra/POLLUTION CONTROL EQUIPMENT-min.jpg",
-      description: "Dual dry cyclone with wet scrubber.",
-    },
     {
       name: "High Pressure Moulding Machine",
       image: "/assets/images/infra/HIGH PRESSURE MOULDING MACHINE-min.jpg",
@@ -47,6 +31,8 @@ function Infrastructure() {
       description:
         "250 box mould bank, Siemens make 27 series PLC with sensors, electrically operated transfer car with AC drive & gear box.",
     },
+
+
     {
       name: "Shot Blasting",
       image: "/assets/images/infra/SHOT BLASTING MACHINE-min.jpg",
@@ -63,9 +49,35 @@ function Infrastructure() {
       description: "Pedestal grinder, angle grinders, flexible grinders, buffing machines.",
     },
     {
+      name: "Automatic Stretch Film Wrapping Machine",
+      image: "/assets/images/infra/AUTOMATIC STRETCH FILM WRAPPING MACHINE-min.jpg",
+      description:
+        "Signode make, model – HLS, PLC controlled fully automatic stretch film.",
+    },
+    {
+      name: "Cupola Furnace",
+      image: "/assets/images/infra/CUPOLA FURNACE-min.jpg",
+      description: "Divided blast energy-efficient cupola, 2 numbers, 6 MT/hour capacity.",
+    },
+    {
+      name: "Pollution Control Equipment",
+      image: "/assets/images/infra/POLLUTION CONTROL EQUIPMENT-min.jpg",
+      description: "Dual dry cyclone with wet scrubber.",
+    },
+    
+    
+    
+    
+    
+    {
+      name: "Solar Panel",
+      image: "/assets/images/infra/ROOF TOP SOLAR PANEL-min.jpg",
+      description: "Roof-mounted solar panels for sustainable energy generation.",
+    },
+    {
       name: "Container Ramp",
       image: "/assets/images/infra/CONTAINER RAMP-min.jpg",
-      description: "Rhino FM 12, box size 650 x 650 x 120 / 120, 60 box/hour capacity.",
+      description: "In-house container stuffing facility.",
     },
     // Add more products as needed
   ];

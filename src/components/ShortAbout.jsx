@@ -17,14 +17,14 @@ function ShortAbout() {
                             <li> 
                                 <strong>Keith Ceramic (KTC) is a leading and well-established manufacturer and exporter of grey iron castings since 1992.</strong><br></br><br></br>
 
-                                Keith Ceramic (KTC) is a family-owned business with over three decades of experience in manufacturing grey iron castings. Founded in 1992, they have become a distinguished manufacturer and exporter of high quality grey iron castings with an annual installed production capacity of 30,000 mt. Their dedicated team of skilled, semi-skilled workmen and experienced staff is committed to delivering world-class quality castings on time, every time, and at the most competitive prices in the market.<br></br><br></br>
+                                Keith Ceramic (KTC) is a family-owned business with over three decades of experience in manufacturing grey iron castings. Founded in 1992, we have become a distinguished manufacturer and exporter of high quality grey iron castings with an annual installed production capacity of 30,000 mt. Our dedicated team of skilled, semi-skilled workmen and experienced staff is committed to delivering world-class quality castings on time, every time, and at the most competitive prices in the market.<br></br><br></br>
 
 
                                 <strong>Strategic location for efficient operations.</strong><br></br><br></br>
 
 
 
-                                KTC is strategically located with easy access to two nearby ports and a railway station, making it easier to transport goods on multi-axle vehicles efficiently. Their facility is conveniently situated along a national highway, ensuring smooth logistics and timely delivery.<br></br><br></br>
+                                KTC is strategically located with easy access to two nearby ports and a railway station, making it easier to transport goods on multi-axle vehicles efficiently. Our facility is conveniently situated along a national highway, ensuring smooth logistics and timely delivery.<br></br><br></br>
 
 
 
@@ -45,7 +45,7 @@ function ShortAbout() {
                         </div>
                     {/* Image Section */}
                     <div className="mt-6 max-w-[500px]">
-                        <img className="rounded-lg  w-full" src="./assets/gifs/team-management-gif.gif" alt="Who we are" />
+                        <img className="rounded-lg  w-full" src="./assets/images/plant.webp" alt="Who we are" />
                     </div>
                 </div>
 

@@ -11,7 +11,7 @@ function History() {
     },
     {
       date: "1992",
-      title: "Formal Incorporation",
+      title: "Formal Incorporation (Registration)",
       description: "Formally incorporated Keith Ceramic (KTC).",
     },
     {
@@ -22,7 +22,7 @@ function History() {
     },
     {
       date: "2004",
-      title: "Pursuit of Backward Integration",
+      title: "Setting up of our own foundry",
       description:
         "We pursued backward integration, marking a significant turning point that laid the foundation for our continuous growth and long-term success. This strategic decision allowed us to gain more control over production processes, enhance product quality, and improve operational efficiency.",
     },
@@ -93,7 +93,7 @@ function History() {
 
             {/* Timeline Content */}
             <div
-  className={`bg-[#02245B] hover:cursor-pointer text-white px-6 py-6 rounded-xl shadow-lg sm:w-[40%] w-full ${
+  className={`bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1462899006636-339e08d1844e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat hover:cursor-pointer text-white px-6 py-6 rounded-xl shadow-lg sm:w-[40%] w-full ${
     index % 2 === 0 ? "sm:mr-4 sm:text-left" : "sm:ml-4 sm:text-right"
   } transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-[#033D7B] hover:text-[#E6E6FA]`}
 >

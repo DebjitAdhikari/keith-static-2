@@ -45,7 +45,7 @@ function Quality() {
     {
       name: "Optical Brinell Hardness Testing Machine",
       image: "/assets/images/qualities/physical-testing/OPTICAL BRINELL HARDNESS TESTING MACHINE.jpg",
-      description: "",
+      description: "Optical Brinell Hardness Testing Machine",
     },
     {
       name: "Fully Automatic Compressed Load Testing Machine",
@@ -55,7 +55,7 @@ function Quality() {
     {
       name: "Drop Testing Machine",
       image: "/assets/images/qualities/physical-testing/DROP TESTING MACHINE.jpg",
-      description: "",
+      description: "Impact Testing Machine",
     },
   ];
   
