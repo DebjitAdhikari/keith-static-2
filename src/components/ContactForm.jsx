@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 function ContactForm() {
@@ -9,6 +9,23 @@ function ContactForm() {
     message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect if the user is on a mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const mobileRegex = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i;
+      setIsMobile(mobileRegex.test(userAgent.toLowerCase()));
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,36 +36,70 @@ function ContactForm() {
     setIsLoading(true);
     
     const { name, email, phone, message } = formData;
+    const recipientEmail = "info@keithceramic.com"; // Replace with your actual email
     
     try {
       // Format the email body
       const emailBody = `
-  Name: ${name}
-  Email: ${email}
-  Phone: ${phone}
-  
-  Message:
-  ${message}
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+
+Message:
+${message}
       `;
       
-      // Create mailto link with form data
-      const mailtoLink = `mailto:info@keithceramic.com?subject=Contact Form Submission from ${name}&body=${encodeURIComponent(emailBody)}`;
+      const emailSubject = `Contact Form Submission from ${name}`;
       
-      // Create Gmail-specific link
-      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=info@keithceramic.com&su=${encodeURIComponent(`Contact Form Submission from ${name}`)}&body=${encodeURIComponent(emailBody)}`;
-      
-      // Show options to user
-      if (window.confirm("Would you like to use Gmail specifically?")) {
-        window.open(gmailLink, '_blank');
+      // Gmail for mobile or desktop
+      if (isMobile) {
+        // For Android devices with Gmail app
+        const gmailAppUrl = `googlegmail://co?to=${encodeURIComponent(recipientEmail)}&subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        
+        // Fallback for other mobile devices
+        const gmailMobileUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        
+        // Try to open Gmail app first, then fall back to mobile web
+        window.location.href = gmailAppUrl;
+        
+        // Set timeout to try the fallback if the app doesn't open
+        setTimeout(() => {
+          window.location.href = gmailMobileUrl;
+        }, 500);
       } else {
-        window.location.href = mailtoLink;
+        // For desktop - open Gmail in browser
+        const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.open(gmailWebUrl, '_blank');
       }
       
-      // Success toast
-      toast.success('Email client opened!');
+      // Show success message
+      toast.success('Submitting...', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      
       setIsLoading(false);
     } catch(error) {
-      // Error handling
+      console.log('error', error);
+      toast.error('Error opening Gmail!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      setIsLoading(false);
     }
   };
 
